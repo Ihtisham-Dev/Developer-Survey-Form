@@ -66,11 +66,19 @@ This project represents one of my first steps toward becoming a Frontend Develop
 ## 📂 Project Structure
 
 
-Developer-Survey-Form/
-│
+Developer-Survey-Form:
 ├── index.html
 ├── styles.css
 └── README.md
+
+
+## ⭐ Future Improvements
+
+* Improve responsiveness for mobile devices
+* Add better color themes
+* Add animations and transitions
+* Store survey responses using JavaScript
+* Connect the form to a backend database
 
 
 ## 👨‍💻 Author
@@ -82,14 +90,6 @@ BS Computer Science Student
 University of Swabi
 
 GitHub: https://github.com/Ihtisham-Dev
-
-## ⭐ Future Improvements
-
-* Improve responsiveness for mobile devices
-* Add better color themes
-* Add animations and transitions
-* Store survey responses using JavaScript
-* Connect the form to a backend database
 
 
 Thank you for visiting this project. Feedback and suggestions are always welcome!
