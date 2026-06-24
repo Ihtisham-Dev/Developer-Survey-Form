@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Experience Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page">
+    <div class="hero">
+      <h1 id="title">Developer Experience Survey</h1>
+      <p id="description">Help us understand your coding habits and tool preferences — it only takes two minutes.</p>
+    </div>
+
+    <form id="survey-form">
+      <div class="card">
+
+        <div class="field">
+          <label id="name-label" for="name">Full name:</label>
+          <input id="name" type="text" placeholder="e.g Ihtisham Ul Haq" required />
+        </div>
+        <br>
+        <div class="field">
+          <label id="email-label" for="email">Email address:</label>
+          <input id="email" type="email" placeholder="e.g. SparkingAsia@gmail.com" required />
+        </div>
+        <br>
+        <div class="field">
+          <label id="number-label" for="number">Years of coding experience:</label>
+          <input id="number" type="number" placeholder="e.g. 5" min="0" max="60" />
+        </div>
+        <br>
+        <hr class="divider" />
+
+        <div class="field">
+          <label for="dropdown">Primary programming language</label>
+          <select id="dropdown">
+            <option value="" disabled selected>Select a languages:</option>
+            <option value="js">JavaScript / TypeScript</option>
+            <option value="python">Python</option>
+            <option value="rust">Rust</option>
+            <option value="go">Go</option>
+            <option value="java">Java / Kotlin</option>
+            <option value="cpp">C / C++</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br>
+        <div class="field">
+          <span class="section-label">How do you prefer to work?</span>
+          <div class="radio-group">
+            <label class="radio-item">
+              <input type="radio" name="work-style" value="remote" /> Fully remote
+            </label>
+            <label class="radio-item">
+              <input type="radio" name="work-style" value="hybrid" /> Hybrid
+            </label>
+            <label class="radio-item">
+              <input type="radio" name="work-style" value="onsite" /> On-site
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="field">
+          <span class="section-label">Which tools do you use regularly?</span>
+          <div class="check-group">
+            <label class="check-item">
+              <input type="checkbox" value="vscode" /> VS Code
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="git" /> Git / GitHub
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="docker" /> Docker / Kubernetes
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="ci" /> CI/CD pipelines
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="ai-assist" /> AI coding assistants
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="field">
+          <label for="comments">Any additional comments or feedback?</label>
+          <textarea id="comments" placeholder="Share anything that's on your mind…"></textarea>
+        </div>
+        <br>
+        <button id="submit" type="submit">Submit survey</button>
+
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
