@@ -1,0 +1,64 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #08ba1a;
+}
+
+#description {
+    text-align: center;
+    color: #efbe0b;
+}
+
+form {
+    width: 70%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 2px solid #cccccc;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    
+}
