@@ -67,9 +67,9 @@ This project represents one of my first steps toward becoming a Frontend Develop
 
 
 Developer-Survey-Form:
-├── index.html
-├── styles.css
-└── README.md
+|-- index.html
+|-- styles.css
+|-- README.md
 
 
 ## ⭐ Future Improvements
