@@ -1,165 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Developer Experience Survey</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <main>
+      <header>
+        <h1 id="title">Developer Experience Survey</h1>
+        <p id="description">
+          Help us understand your coding habits and tool preferences — it only
+          takes two minutes.
+        </p>
+      </header>
 
-        <header>
-            <h1 id="title">Developer Experience Survey</h1>
-            <p id="description">
-                Help us understand your coding habits and tool preferences — it only takes two minutes.
-            </p>
-        </header>
+      <form id="survey-form">
+        <section>
+          <div>
+            <label id="name-label" for="name">Full Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
 
-        <form id="survey-form">
+          <div>
+            <label id="email-label" for="email">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
 
-            <section>
+          <div>
+            <label id="number-label" for="number">
+              Years of Coding Experience
+            </label>
 
-                <div>
-                    <label id="name-label" for="name">Full Name</label>
-                    <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        placeholder="Enter your full name"
-                        required>
-                </div>
+            <input
+              id="number"
+              name="experience"
+              type="number"
+              min="0"
+              max="60"
+              placeholder="Enter years of experience"
+            />
+          </div>
 
-                <div>
-                    <label id="email-label" for="email">Email Address</label>
-                    <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="Enter your email address"
-                        required>
-                </div>
+          <hr />
 
-                <div>
-                    <label id="number-label" for="number">
-                        Years of Coding Experience
-                    </label>
+          <div>
+            <label for="dropdown"> Primary Programming Language </label>
 
-                    <input
-                        id="number"
-                        name="experience"
-                        type="number"
-                        min="0"
-                        max="60"
-                        placeholder="Enter years of experience">
-                </div>
+            <select id="dropdown" name="language">
+              <option value="" disabled selected>Select a language</option>
+              <option value="javascript">JavaScript / TypeScript</option>
+              <option value="python">Python</option>
+              <option value="java">Java / Kotlin</option>
+              <option value="cpp">C / C++</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
 
-                <hr>
+          <fieldset>
+            <legend>How do you prefer to work?</legend>
 
-                <div>
-                    <label for="dropdown">
-                        Primary Programming Language
-                    </label>
+            <label>
+              <input type="radio" name="work-style" />
+              Fully Remote
+            </label>
 
-                    <select id="dropdown" name="language">
-                        <option value="" disabled selected>
-                            Select a language
-                        </option>
-                        <option value="javascript">
-                            JavaScript / TypeScript
-                        </option>
-                        <option value="python">
-                            Python
-                        </option>
-                        <option value="java">
-                            Java / Kotlin
-                        </option>
-                        <option value="cpp">
-                            C / C++
-                        </option>
-                        <option value="other">
-                            Other
-                        </option>
-                    </select>
-                </div>
+            <label>
+              <input type="radio" name="work-style" />
+              Hybrid
+            </label>
 
-                <fieldset>
-                    <legend>How do you prefer to work?</legend>
+            <label>
+              <input type="radio" name="work-style" />
+              On-Site
+            </label>
+          </fieldset>
 
-                    <label>
-                        <input type="radio" name="work-style">
-                        Fully Remote
-                    </label>
+          <fieldset>
+            <legend>Which tools do you use regularly?</legend>
 
-                    <label>
-                        <input type="radio" name="work-style">
-                        Hybrid
-                    </label>
+            <label>
+              <input type="checkbox" />
+              VS Code
+            </label>
 
-                    <label>
-                        <input type="radio" name="work-style">
-                        On-Site
-                    </label>
-                </fieldset>
+            <label>
+              <input type="checkbox" />
+              Git / GitHub
+            </label>
 
-                <fieldset>
-                    <legend>Which tools do you use regularly?</legend>
+            <label>
+              <input type="checkbox" />
+              Docker
+            </label>
 
-                    <label>
-                        <input type="checkbox">
-                        VS Code
-                    </label>
+            <label>
+              <input type="checkbox" />
+              CI/CD Pipelines
+            </label>
 
-                    <label>
-                        <input type="checkbox">
-                        Git / GitHub
-                    </label>
-
-                    <label>
-                        <input type="checkbox">
-                        Docker
-                    </label>
-
-                    <label>
-                        <input type="checkbox">
-                        CI/CD Pipelines
-                    </label>
-
-                    <label>
-                        <input type="checkbox">
-                        AI Coding Assistants
-                    </label>
-                </fieldset>
-
-                <div>
-                    <label for="comments">
-                        Additional Comments or Feedback
-                    </label>
-
-                    <textarea
-                        id="comments"
-                        name="comments"
-                        rows="5"
-                        placeholder="Share your thoughts here..."></textarea>
-                </div>
-
-                <button id="submit" type="submit">
-                    Submit Survey
-                </button>
-
-            </section>
-
-        </form>
-
+            <label>
+              <input type="checkbox" />
+              AI Coding Assistants
+            </label>
+          </fieldset>
+          <div>
+            <label for="comments"> Additional Comments or Feedback </label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              placeholder="Share your thoughts here..."
+            ></textarea>
+          </div>
+          <button id="submit" type="submit">Submit Survey</button>
+        </section>
+      </form>
     </main>
-
     <footer>
-        <p>&copy; 2026 Created by Ihtisham Ul Haq</p>
+      <p>&copy; 2026 Created by Ihtisham Ul Haq</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
